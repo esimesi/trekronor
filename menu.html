@@ -1,0 +1,2743 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,900&display=swap" rel="stylesheet">
+  <title>TreKronorMeny</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+
+<!-- Header begins-->
+<section class="showcase">
+  <header class="header">
+    <div class="logo">
+      <a href="#">
+        <img src="icons/logo.png" alt="Logo">
+      </a>
+    </div>
+    <div class="navigation">
+      <input class="toggle-menu" type="checkbox" id="toggle-menu">
+      <div class="hamburger-wrapper">
+        <label for="toggle-menu" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+      </div>
+      <ul class="menu-header">
+        <li class="hamburger-wrapper-mobile">
+          <input class="toggle-menu" type="checkbox" id="toggle-menu-header">
+          <label for="toggle-menu-header" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+        </li>        
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="menu.html">Meny</a></li>
+        <li><a href="contacts.html">Beställ</a></li>
+        <li><a href="contacts.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+</section>
+ 
+
+
+  <!--Home section begins-->
+  <section class="Home">
+    <div class="swiper Home-slider">
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide slider">
+          <div class="content">
+            <span class="span-in-content">10-14 vardagar</span>
+            <h3>Dagens lunch</h3>
+            <p>bara 99kr</p>
+            <a href="#" class="dagenslunchbutton">vad som ingår!</a>
+          </div>
+          <div class="image">
+            <img src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg">
+          </div>
+        </div>
+        <div class="swiper-slide slider">
+          <div class="content">
+            <span> pizza med ostfylda kanter </span>
+            <h3>ostkant 1-3</h3>
+            <p>bara 120kr</p>
+            <a href="#" class="order">se i meny!</a>
+          </div>
+          <div class="image">
+            <img src="pictures/ostkant.png">
+          </div>
+        </div>
+        <div class="swiper-slide slider">
+          <div class="content">
+            <h2 class="allergy">OBS! Vid Eventuelt allergi fråga personalen.</h3>
+          </div>
+          <div class="image">
+            <img src="pictures/allergy.png">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  
+  <!-- Home section ends-->
+  <!--Menu section begins-->
+
+  <section class="menu">
+
+
+   
+
+
+    <h2 class="subheading" id="subheading">vår meny</h2>
+  
+    <!-- Filter section begins -->
+    <div id="filter" class="filter-buttons">
+      <button class="filter-btn" data-filter="pizza">
+        <img src="icons/image-from-rawpixel-id-6886162-png.png" data-default-image="icons/image-from-rawpixel-id-6886162-png.png" data-active-image="icons/pizza-active.png" alt="Pizza" id="pizzatag">
+        <span>Pizza</span>
+      </button>
+      <button class="filter-btn" data-filter="vitizza">
+        <img src="icons/vitpizza-default.png" data-default-image="icons/vitpizza-default.png" data-active-image="icons/vitpizza-active.png" alt="vitlök och hot Pizza">
+        <span>hot&vitlök pizza</span>
+      </button>
+      <button class="filter-btn" data-filter="inbakad">
+        <img src="icons/inbakaddefault.png" data-default-image="icons/inbakaddefault.png" data-active-image="icons/inbakadactive.png" alt="inbakad pizza">
+        <span>inbakad pizza</span>
+      </button>
+      <button class="filter-btn" data-filter="rullar">
+        <img src="icons/sand-default.png" data-default-image="icons/sand-default.png" data-active-image="icons/sand-active.png" alt="Other">
+        <span>pizza rullar</span>
+      </button>
+      <button class="filter-btn" data-filter="kebabgyrus">
+        <img src="icons/kebab-default.png" data-default-image="icons/kebab-default.png" data-active-image="icons/kebab-active.png" alt="Snacks">
+        <span>kebab&gyrus</span>
+      </button>
+      <button class="filter-btn" data-filter="sallad">
+        <img src="icons/sallad-default.png" data-default-image="icons/sallad-default.png" data-active-image="icons/sallad-active.png" alt="Snacks">
+        <span>sallad</span>
+      </button>
+      <button class="filter-btn" data-filter="veganvegetarian">
+        <img src="icons/vegan-default.png" data-default-image="icons/vegan-default.png" data-active-image="icons/vegan-active.png" alt="Snacks">
+        <span>vegan&vegetarian</span>
+      </button>
+      <button class="filter-btn" data-filter="Hamburgare">
+        <img src="icons/hamburger-default.png" data-default-image="icons/hamburger-default.png" data-active-image="icons/hamburger-active.png" alt="Hamburger">
+        <span>Hamburgare</span>
+      </button>
+      <button class="filter-btn" data-filter="grillsnacks">
+        <img src="icons/grill-default.png" data-default-image="icons/grill-default.png" data-active-image="icons/grill-active.png" alt="Meat">
+        <span>grill&snacks</span>
+      </button>
+      <button class="filter-btn" data-filter="barnmeny">
+        <img src="icons/barn-meny-default.png" data-default-image="icons/barn-meny-default.png" data-active-image="icons/barn-meny-active.png" alt="Snacks">
+        <span>barn meny</span>
+      </button>
+      <button class="filter-btn" data-filter="dagenslunch">
+        <img src="icons/lunch-default.png" data-default-image="icons/lunch-default.png" data-active-image="icons/lunch-active.png" alt="Snacks">
+        <span>dagens lunch</span>
+      </button>
+      <!-- Add more buttons here -->
+    </div>
+      
+
+    <h2 class="heading" id="heading">pizza</h2>
+    <p class="description"></p>
+    <div class="menu-container">
+      
+
+      <div class="item" data-type="pizza" id="pizzatag">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Margarita</h2>
+        <div class="item-details">
+          <p class="description">ost och mer ost</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">85 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>vESUVIO</h2>
+        <div class="item-details">
+          <p class="description">skinka </p>
+          <div class="price-size-container first-price">
+            <h3 class="price">95 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Hawaii </h2>
+        <div class="item-details">
+          <p class="description">skinka, ananas</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">95 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>CAPRICCIOSA</h2>
+        <div class="item-details">
+          <p class="description">skinka, svamp</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">95 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Opera</h2>
+        <div class="item-details">
+          <p class="description">skinka, tonfisk</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>banana</h2>
+        <div class="item-details">
+          <p class="description">skinka, banan, curry</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>salami</h2>
+        <div class="item-details">
+          <p class="description">salami, lök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Al-TONO</h2>
+        <div class="item-details">
+          <p class="description">tonfisk, lök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>mona lisa</h2>
+        <div class="item-details">
+          <p class="description">skinka, bacon, lök, ägg</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>bussola</h2>
+        <div class="item-details">
+          <p class="description">skinka, räkor</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>BIANCA</h2>
+        <div class="item-details">
+          <p class="description">mozzarella ost, köttfärs, vitlök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+            
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>3s</h2>
+        <div class="item-details">
+          <p class="description">mozzarella ost, pepperonikorv, ananas, jalapeno </p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+            
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Fano</h2>
+        <div class="item-details">
+          <p class="description">mozzarella ost, pepperonikorv, jalapeño, paprika, tomat</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+            
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Gorgonzola</h2>
+        <div class="item-details">
+          <p class="description">skinka, gorgonzola ost</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+            
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>mEXICO</h2>
+        <div class="item-details">
+          <p class="description">skinka, pepperonikorv, lök, paprika</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+            
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>eLIZABETH</h2>
+        <div class="item-details">
+          <p class="description">fläskfilé, lök, tomat, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+                  
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Elias SPECIAL</h2>
+        <div class="item-details">
+          <p class="description">fläskfilé, champinjoner, tomat, gorgonzola ost, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+                        
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>HUSETS PIZZA</h2>
+        <div class="item-details">
+          <p class="description">fläskfile,  paprika, tomat, cayenpeppar, lök, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+                              
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Jamaica</h2>
+        <div class="item-details">
+          <p class="description">skinka, svamp, räkor</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+                                    
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Quatro stagioni</h2>
+        <div class="item-details">
+          <p class="description">skinka, svamp, räkor, musslor</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>ANTON SPECIAL</h2>
+        <div class="item-details">
+          <p class="description">skinka, oxfilé, fläskfilé, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>bLACK & WHITE</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, fläskfilé, champinjoner, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Kycklingpizza</h2>
+        <div class="item-details">
+          <p class="description">kyckling, tomat, lök, feferoni, vitlökssås </p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Kärlekspizza</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, champinjon, purjolök, mozzarella ost, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Västerbotten special</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, västerbottenost, kantarell, vitlök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Vännäs special</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, skinka, ananas, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Silvia Special</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, salami, champinjon</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Tre kronor special</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, salami, champinjon, purjolök, paprika, tomat, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+            
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>egen pizza</h2>
+        <div class="item-details">
+          <p class="description">fyll i här med ingredienser som du vill ha på din pizza</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">120 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+    <h2 class="pizza-header"id="pizzaHeader" >italiensk pizza</h2>
+    <div class="italiensk-pizza">
+      
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>  FUNGHI</h2>
+        <div class="item-details">
+          <p class="description">mozzarella ost, färska champinjoner</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>lADIOSA</h2>
+        <div class="item-details">
+          <p class="description">mozzarella ost, räkor</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>nARIN</h2>
+        <div class="item-details">
+          <p class="description">mozzarella ost, skinka, salami</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Sunny </h2>
+        <div class="item-details">
+          <p class="description">salami, bacon, paprika, lök, tomat</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Monte carlo</h2>
+        <div class="item-details">
+          <p class="description">salami, lök, tomat, paprika, gorgonzolaost</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Mars</h2>
+        <div class="item-details">
+          <p class="description">oxfile, kantareller, lök, tomat, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Sorento</h2>
+        <div class="item-details">
+          <p class="description">oxfile, champinjon, paprika, tomat, lök, gorgonzolaost</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+    
+      
+
+
+
+    </div>
+
+
+
+
+
+    <div class="menu-container">
+      
+      <div class="item" data-type="vitizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Hot Peppear </h2>
+        <div class="item-details">
+          <p class="description">skinka, salami, jalapeño, purjolök, starksås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item" data-type="vitizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>toNDI</h2>
+        <div class="item-details">
+          <p class="description">svamp, pepperonikorv, paprika, jalapeño</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item" data-type="vitizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Mexicana</h2>
+        <div class="item-details">
+          <p class="description">köttfärs,vitlök, lök, tacosås,tacokrydda,jalapeno</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item" data-type="vitizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>sTARK PIZZA</h2>
+        <div class="item-details">
+          <p class="description">svamp, räkor, salami, paprika, jalapeno, starksås </p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <h2 class="pizza-header"id="pizzaHeader" >pan pizza</h2>
+
+    <div class="italiensk-pizza panpizza">
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>HAWAII</h2>
+        <div class="item-details">
+          <p class="description">skinka, ananas, banan, curry</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">185 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">270 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>NEW YORK</h2>
+        <div class="item-details">
+          <p class="description">oxfile, champinjon, paprika, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>NIAGARA</h2>
+        <div class="item-details">
+          <p class="description">skinka, salami, oliver, jalapeno</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item" data-type="pizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>CALLIFORNIA</h2>
+        <div class="item-details">
+          <p class="description">kebab, tomat, lök, feferoni, kebabsås </p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <h2 class="hot-header"id="hot-headers" >vitlök pizza</h2>
+    
+    <div class="menu-container">
+
+      <div class="item" data-type="vitizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>vitlök 1</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, salami, champinjon, vitlök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="vitizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>vitlök 2</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, salami, bacon, champinjon, vitlök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="vitizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>vitlök 3</h2>
+        <div class="item-details">
+          <p class="description">salami, bacon, champinjon, vitlök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="vitizza">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Lina Special</h2>
+        <div class="item-details">
+          <p class="description">salami, skinka, köttfärs, bacon, vitlök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+    <div class="inbakade" >
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/calzone.png" alt="ostkant">
+        <h2>calzone</h2>
+        <div class="item-details">
+          <p class="description">skinka</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">90 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/calzone.png" alt="ostkant">
+        <h2>Calzone Paradis</h2>
+        <div class="item-details">
+          <p class="description">skinka, ananas</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/calzone.png" alt="ostkant">
+        <h2>Calzone Rhodos</h2>
+        <div class="item-details">
+          <p class="description">skinka, räkor</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/calzone.png" alt="ostkant">
+        <h2>Calzone Special</h2>
+        <div class="item-details">
+          <p class="description">skinka, svamp, räkor</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/calzone.png" alt="ostkant">
+        <h2>Hot Calzone</h2>
+        <div class="item-details">
+          <p class="description">skinka, salami, stark sås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/calzone.png" alt="ostkant">
+        <h2>Calzone kyckling</h2>
+        <div class="item-details">
+          <p class="description">kyckling, ananas, curry</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/calzone.png" alt="ostkant">
+        <h2>Calzone Kebab</h2>
+        <div class="item-details">
+           <p class="description">kebab, svamp, lök, tomat, feferoni</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/calzone.png" alt="ostkant">
+        <h2>Calzone gyros</h2>
+        <div class="item-details">
+          <p class="description">gyros, svamp, lök, tomat, feferoni</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/calzone.png" alt="ostkant">
+        <h2>dubbel inbakad</h2>
+        <div class="item-details">
+          <p class="description">dubbelt av alla (av pizzorna ovan)</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">135 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      
+    </div>
+    <h2 class="ostkant"id="inbakadPizzaHeader">båtpizza</h2>
+    <div class="inbakade">
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/ostkant.png" alt="ostkant">
+        <h2>Vikingkebab</h2>
+        <div class="item-details">
+          <p class="description">kebab, tomat, lök, isbergssallad, peperoni, gurka, kebab dressing</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/ostkant.png" alt="ostkant">
+        <h2>Båtpizza</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, champinjon, vitlök, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">120 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/ostkant.png" alt="ostkant">
+        <h2>Ciocio</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, lök, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">120 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/ostkant.png" alt="ostkant">
+        <h2>Ubåt</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, skinka, ananas, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">120 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/ostkant.png" alt="ostkant">
+        <h2>Mamani</h2>
+        <div class="item-details">
+          <p class="description">ägg, mozzarella ost, gorgonzola ost, ruccola</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">120 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <h2 class="ostkant"id="inbakadPizzaHeader">ostkant</h2>
+    <div class="inbakade">
+
+      <div class="item2" data-type="inbakad" id="buttontag">
+        <img class="menu-picture" src="pictures/ostkant.png" alt="ostkant">
+        <h2>NR 1  OSTKANT</h2>
+        <div class="item-details">
+          <p class="description">svamp, gyros, lök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">120 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/ostkant.png" alt="ostkant">
+        <h2>NR 2 OSTKANT</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, champinjon,  bearnaisesås </p>
+          <div class="price-size-container first-price">
+            <h3 class="price">120 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="inbakad">
+        <img class="menu-picture" src="pictures/ostkant.png" alt="ostkant">
+        <h2>NR 3  OSTKANT</h2>
+        <div class="item-details">
+          <p class="description">kebab, tomat, lök, feferoni, kebabsås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">120 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="inbakade">
+
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>kebabrulle</h2>
+        <div class="item-details">
+          <p class="description">kebabkött</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>gyrosrulle</h2>
+        <div class="item-details">
+          <p class="description">gyros</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>kycklingrulle</h2>
+        <div class="item-details">
+          <p class="description">paprika, tomat, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>falafelrulle</h2>
+        <div class="item-details">
+          <p class="description">falafel</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>gyrosrulle</h2>
+        <div class="item-details">
+          <p class="description">gyros</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>kycklingrulle</h2>
+        <div class="item-details">
+          <p class="description">paprika, tomat, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>cappriciosarulle</h2>
+        <div class="item-details">
+          <p class="description">skinka, svamp</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+
+            
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>pomemsrulle</h2>
+        <div class="item-details">
+          <p class="description">kebab, pommes</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+
+               
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>oxfilérulle</h2>
+        <div class="item-details">
+          <p class="description">oxfilé, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>mexikanrulle</h2>
+        <div class="item-details">
+          <p class="description">oxfile, jalapeno, tacosås, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="rullar">
+        <img class="menu-picture" src="pictures/rulle.png" alt="ostkant">
+        <h2>Mixrulle</h2>
+        <div class="item-details">
+          <p class="description">kebab, kyckling, gyros, feferoni, kebabsås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="inbakade">
+      
+      <div class="item2" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/litenkebab.png" alt="ostkant">
+        <h2>Liten kebab</h2>
+        <div class="item-details">
+          <p class="description">pitabröd, kebab, grönsaker, dresseing</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="item2" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/litenkebab.png" alt="ostkant">
+        <h2>STOR KEBAB</h2>
+        <div class="item-details">
+          <p class="description">pitabröd, kebab, grönsaker, dresseing</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="item2" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/talrik.png" alt="ostkant">
+        <h2>KEBABTALLRIK</h2>
+        <div class="item-details">
+          <p class="description">kebab, pommes, grönsaker</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/talrik.png" alt="ostkant">
+        <h2>GYROSTALLRIK</h2>
+        <div class="item-details">
+          <p class="description">gyros, pommes, sallad</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/ostkant.png" alt="ostkant">
+        <h2>GYROSBÅT</h2>
+        <div class="item-details">
+          <p class="description">gyros, tomat, lök, feferoni, kebabsås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>KEBABPIZZA</h2>
+        <div class="item-details">
+          <p class="description">kebab, tomat, lök, feferoni, kebabsås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>KRISTIAN SPECIAL</h2>
+        <div class="item-details">
+          <p class="description">kebab, isbergsallad, tomat, lök, feferoni, kebabsås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="item" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>KEBABPIZZA HOT</h2>
+        <div class="item-details">
+          <p class="description">kebab, tomat, lök, feferoni, hot sås, kebabås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+    
+      <div class="item" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>SUPERKEBABPIZZA</h2>
+        <div class="item-details">
+          <p class="description">kebab, fetaost, tomat, lök, feferoni, kebabsås, pommes</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="kebabgyrus">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>GYROS SPECIAL</h2>
+        <div class="item-details">
+          <p class="description">gyros, skinka, champinjoner, kebabsås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="inbakade">
+
+        
+      <div class="item2" data-type="sallad">
+        <img class="menu-picture" src="pictures/sallad.png" alt="ostkant">
+        <h2>TRE KRONOR SALLAD</h2>
+        <div class="item-details">
+          <p class="description">räkor, skinka, kyckling, banan</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="sallad">
+        <img class="menu-picture" src="pictures/sallad.png" alt="ostkant">
+        <h2>KEBABSALLAD</h2>
+        <div class="item-details">
+          <p class="description">kebabkött, lök, peperoni</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item2" data-type="sallad">
+        <img class="menu-picture" src="pictures/sallad.png" alt="ostkant">
+        <h2>GREKISK SALLAD</h2>
+        <div class="item-details">
+          <p class="description">fårost, oliver, paprika, sallad</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item2" data-type="sallad">
+        <img class="menu-picture" src="pictures/sallad.png" alt="ostkant">
+        <h2>KYCKLINGSALLAD</h2>
+        <div class="item-details">
+          <p class="description">kyckling, banan, sallad</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item2" data-type="sallad">
+        <img class="menu-picture" src="pictures/sallad.png" alt="ostkant">
+        <h2>RÄKSALLAD</h2>
+        <div class="item-details">
+          <p class="description">räkor, sallad, paprika</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item2" data-type="sallad">
+        <img class="menu-picture" src="pictures/sallad.png" alt="ostkant">
+        <h2>TONFISKSALLAD</h2>
+        <div class="item-details">
+          <p class="description">tonfisk, oliver, svartpeppar</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+    <div class="inbakade">
+      <div class="item" data-type="veganvegetarian">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>VEGanpizza 1 (vegan)</h2>
+        <div class="item-details">
+          <p class="description">champinjon, ruccola, lök, vitlök, tomat</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">89 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+    
+
+
+    <div class="item" data-type="veganvegetarian">
+      <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+      <h2>VEGanpizza 2 (vegan)</h2>
+      <div class="item-details">
+        <p class="description">champinjon, spenat, paprika, lök</p>
+        <div class="price-size-container first-price">
+          <h3 class="price">89 kr</h3>
+          <h3 class="size">33cm</h3>
+        </div>
+        <div class="price-size-container">
+          <h3 class="price-secondary">200 kr</h3>
+          <h3 class="size-secondary">40cm</h3>
+        </div>
+        <div class="price-size-container">
+          <h3 class="price-thrid">275 kr</h3>
+          <h3 class="size-thrid">50cm</h3>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="item" data-type="veganvegetarian">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>vegetaria</h2>
+        <div class="item-details">
+          <p class="description">svamp, ananas, paprika, lök, tomat</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">105 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="veganvegetarian">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>spenatpizza</h2>
+        <div class="item-details">
+          <p class="description">spenat, lök, fetaost, vitlök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">105 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="veganvegetarian">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>sandra special</h2>
+        <div class="item-details">
+          <p class="description">champ., oliver, tomat, lök, ruccola, vitlök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">105 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="veganvegetarian">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>iNDIANA</h2>
+        <div class="item-details">
+          <p class="description">ananas, banan, curry</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">105 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="veganvegetarian">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Grekisk pizza</h2>
+        <div class="item-details">
+          <p class="description">fetaost, lök, paprika, oliver, tomat</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">105 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="veganvegetarian">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>quatro formaggio</h2>
+        <div class="item-details">
+          <p class="description">gorgonzola ost, mozzarella ost, fetaost</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="veganvegetarian">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Carpese</h2>
+        <div class="item-details">
+          <p class="description">mozzarella ost, champinjon, tomat, svartpeppar</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="inbakade">
+
+      <div class="item2" data-type="Hamburgare">
+        <img class="menu-picture" src="pictures/fries.png" alt="ostkant">
+        <h2>stripsmeny</h2>
+        <div class="item-details">
+          <p class="description">pommes, dresseing</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">40 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item2" data-type="Hamburgare">
+        <img class="menu-picture" src="pictures/hamburgare.png" alt="ostkant">
+        <h2>MINISKROV</h2>
+        <div class="item-details">
+          <p class="description">45 g hamburgare, pommes, dricka</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">79 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="Hamburgare">
+        <img class="menu-picture" src="pictures/hamburgare.png" alt="ostkant">
+        <h2>Kycklingburgare</h2>
+        <div class="item-details">
+          <p class="description">90g, pommes, dricka</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">90 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="Hamburgare">
+        <img class="menu-picture" src="pictures/hamburgare.png" alt="ostkant">
+        <h2>HAMBURGARTALLRIK</h2>
+        <div class="item-details">
+          <p class="description">90 g hamburgare, pommes, dricka</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="Hamburgare">
+        <img class="menu-picture" src="pictures/hamburgare.png" alt="ostkant">
+        <h2>SKROVMÅL</h2>
+        <div class="item-details">
+          <p class="description">2x45 g hamburgare, pommes, dricka</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item2" data-type="Hamburgare">
+        <img class="menu-picture" src="pictures/hamburgare.png" alt="ostkant">
+        <h2>SUPERSKROVMÅL</h2>
+        <div class="item-details">
+          <p class="description">2x90 g hamburgare, pommes, dricka</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">105 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="Hamburgare">
+        <img class="menu-picture" src="pictures/hamburgare.png" alt="ostkant">
+        <h2>VÄNNÄSBURGARE</h2>
+        <div class="item-details">
+          <p class="description">200 g hamburgare, bacon, sallad, bostongurka, dressing, pommes, dricka</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">125 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  
+
+
+    <div class="inbakade">
+      
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/talrik.png" alt="ostkant">
+        <h2>FALAFELTALLRIK</h2>
+        <div class="item-details">
+          <p class="description">falafel, pommes, sallad, dressing</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/talrik.png" alt="ostkant">
+        <h2>kycklingtallrik</h2>
+        <div class="item-details">
+          <p class="description">kyckling, pommes, sallad, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/talrik.png" alt="ostkant">
+        <h2>mixtallrik</h2>
+        <div class="item-details">
+          <p class="description">kyckling, kebab, pommes, sallad, vitlökssås, kebabsås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/talrik.png" alt="ostkant">
+        <h2>oxfilétallrik</h2>
+        <div class="item-details">
+          <p class="description">oxfile, pommes, sallad, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">120 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/grill.png" alt="ostkant">
+        <h2>lövbiff</h2>
+        <div class="item-details">
+          <p class="description">pommes, sallad, bearnaisesås, persiljesmör</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/grill.png" alt="ostkant">
+        <h2>RÖDSPÄTTA</h2>
+        <div class="item-details">
+          <p class="description">stekt potatis, grönsaker, remouladsås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/grill.png" alt="ostkant">
+        <h2>grillbiff</h2>
+        <div class="item-details">
+          <p class="description">pommes, sallad, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/grill.png" alt="ostkant">
+        <h2>schnitzel</h2>
+        <div class="item-details">
+          <p class="description">pommes, sallad, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h2 class="snacksheader"id="snacksheading" >Snacks</h2>
+
+    <div class="inbakade">
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/mozarella.png" alt="ostkant">
+        <h2>MOZZARELLASTICKS</h2>
+        <div class="item-details">
+          <p class="description">4st</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">40 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/onionrings.png" alt="ostkant">
+        <h2>lökringar</h2>
+        <div class="item-details">
+          <p class="description">5st</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">40 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item2" data-type="grillsnacks">
+        <img class="menu-picture" src="pictures/hotwings.png" alt="ostkant">
+        <h2>hot wings</h2>
+        <div class="item-details">
+          <p class="description">4st</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">40 kr</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="inbakade">
+
+      <div class="item2" data-type="barnmeny">
+        <img class="menu-picture" src="pictures/korv.png" alt="ostkant">
+        <h2>GRILLKORVTALLRIK</h2>
+        <div class="item-details">
+          <p class="description">2 korvar, pommes</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">85 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item2" data-type="barnmeny">
+        <img class="menu-picture" src="pictures/nuggets.png" alt="ostkant">
+        <h2>KYCKLINGNUGGETS</h2>
+        <div class="item-details">
+          <p class="description">5 st, pommes, dressing</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">85 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item2" data-type="barnmeny">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="ostkant">
+        <h2>TOM & JERRY</h2>
+        <div class="item-details">
+          <p class="description">skinka, färsk svamp</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">85 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="barnmeny">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="ostkant">
+        <h2>NALLE PUH</h2>
+        <div class="item-details">
+          <p class="description">skinka, vitlökssås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">85 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="barnmeny">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="ostkant">
+        <h2>SIMPSON</h2>
+        <div class="item-details">
+          <p class="description">skinka, ananas</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">85 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="inbakade">
+
+
+
+      
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Margarita</h2>
+        <div class="item-details">
+          <p class="description">ost och mer ost</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">85 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>vESUVIO</h2>
+        <div class="item-details">
+          <p class="description">skinka </p>
+          <div class="price-size-container first-price">
+            <h3 class="price">95 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Hawaii </h2>
+        <div class="item-details">
+          <p class="description">skinka, ananas</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">95 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>CAPRICCIOSA</h2>
+        <div class="item-details">
+          <p class="description">skinka, svamp</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">95 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Opera</h2>
+        <div class="item-details">
+          <p class="description">skinka, tonfisk</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>banana</h2>
+        <div class="item-details">
+          <p class="description">skinka, banan, curry</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>salami</h2>
+        <div class="item-details">
+          <p class="description">salami, lök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="item" data-type="dagenslunch" id="dagenstag">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Al-TONO</h2>
+        <div class="item-details">
+          <p class="description">tonfisk, lök</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>mona lisa</h2>
+        <div class="item-details">
+          <p class="description">skinka, bacon, lök, ägg</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>bussola</h2>
+        <div class="item-details">
+          <p class="description">skinka, räkor</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">200 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">275 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>Kycklingpizza</h2>
+        <div class="item-details">
+          <p class="description">kyckling, tomat, lök, feferoni, vitlökssås </p>
+          <div class="price-size-container first-price">
+            <h3 class="price">115 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view (1).jpg" alt="Pizza">
+        <h2>KEBABPIZZA</h2>
+        <div class="item-details">
+          <p class="description">kebab, tomat, lök, feferoni, kebabsås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+            <h3 class="size">33cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-secondary">205 kr</h3>
+            <h3 class="size-secondary">40cm</h3>
+          </div>
+          <div class="price-size-container">
+            <h3 class="price-thrid">310 kr</h3>
+            <h3 class="size-thrid">50cm</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="item2" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/talrik.png" alt="kycklingtallrik">
+        <h2>kycklingtallrik</h2>
+        <div class="item-details">
+          <p class="description">kyckling, pommes, sallad, bearnaisesås</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item2" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/talrik.png" alt="ostkant">
+        <h2>KEBABTALLRIK</h2>
+        <div class="item-details">
+          <p class="description">kebab, pommes, grönsaker</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">110 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/hamburgare.png" alt="ostkant">
+        <h2>MINISKROV</h2>
+        <div class="item-details">
+          <p class="description">45 g hamburgare, pommes, dricka</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">79 kr</h3>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="item2" data-type="dagenslunch">
+        <img class="menu-picture" src="pictures/hamburgare.png" alt="ostkant">
+        <h2>SKROVMÅL</h2>
+        <div class="item-details">
+          <p class="description">2x45 g hamburgare, pommes, dricka</p>
+          <div class="price-size-container first-price">
+            <h3 class="price">99 kr</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  contact and other info begins    -->
+  <section>
+
+    <div class="information">
+      <div class="contact-container">
+        <div class="header-text">Beställa/kontakt</div>
+        <div class="contacts">
+          <img src="icons/clock.png" alt="Clock icon">
+          <h1>Öppettider</h1>
+          <h2>Mån&nbsp;&#45;&nbsp;Fre&nbsp;:&nbsp;10:00&#45;20:00</h2>
+          <h2>Fre &#45; Lör : 10:30&#45;21:00</h2>
+          <h2>Sön : 12:00&#45;20:00</h2>
+
+        </div>
+        
+        <div class="contacts">
+          <div class="contacts-content">
+            <img src="icons/telephone.png" alt="Telephone Icon">
+            <h1>Beställa</h1>
+            <div class="phone-number">
+              <h2 class="tel">tel:</h2>
+              <a href="tel:093512335">093512335</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts">
+          <img src="icons/adress.png" alt="Adress icon">
+          <h1>Adress</h1>
+          <a class="adress-a" href="https://www.google.com/maps?q=tre+kronor+pizza+v%C3%A4nn%C3%A4s&source=lmns&entry=mt&bih=912&biw=1920&hl=en-GB&sa=X&ved=2ahUKEwi7rpmHsMv-AhUMuSoKHSoWAQwQ_AUoAnoECAEQAg">Östra Järnvägsgatan 3A</a>
+          <h2>911 32 Vännäs</h2>
+        </div>
+      </div>  
+     
+      
+      
+    </div>
+
+
+
+
+
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- If we need pagination -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 4000,
+        disableonInteraction: false,
+      },
+  
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
+
+});
+  </script>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

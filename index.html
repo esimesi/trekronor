@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,900&display=swap" rel="stylesheet">
+     
+  <link rel="icon" href="icons/logo.png" type="image/icon type">
+  <title>Tre kronor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="showcase">
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="icons/logo.png" alt="Logo">
+        </a>
+      </div>
+      <div class="navigation">
+        <input class="toggle-menu" type="checkbox" id="toggle-menu">
+        <div class="hamburger-wrapper">
+          <label for="toggle-menu" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+        </div>
+        <ul class="menu-header">
+          <li class="hamburger-wrapper-mobile">
+            <input class="toggle-menu" type="checkbox" id="toggle-menu-header">
+            <label for="toggle-menu-header" class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </label>
+          </li>        
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="menu.html">Meny</a></li>
+          <li><a href="contacts.html">Beställ</a></li>
+          <li><a href="contacts.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+  </section>
+
+
+
+  <section class="video-background">
+    <div class="main-page">
+      <video autoplay muted loop playsinline>
+        <source src="video/trekronortreal.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="gradient-overlay"></div>
+      <div class="overlay-content">
+        <h1>dagens lunch</h1>
+        <h2>99Kr</h2>
+        <a href="menu.html#pizzatag">
+          <button class="btn1">
+              <p class="text1">meny</p>
+              <p class="text2">se meny här</p>
+          </button>
+      </a>
+      <a href="tel:093512335">
+        <button class="btn">
+            <p class="text1">beställ</p>
+            <p class="text2">kontakt</p>
+        </button>
+    </a>
+    
+      </div>
+    </div>
+  </section>
+  <section id="info-section">
+    <div class="info">
+      <div class="info-row">
+        <div class="info-image" style="background-image: url('pictures/service.jpg');"></div>
+        <div class="info-content">
+          <i class="info-icon fas fa-utensils"></i>
+          <h3 class="info-title">UTMÄRKT SERVICE</h3>
+          <p class="info-description">Hos oss är kundens tillfredsställelse vår högsta prioritet. Vårt dedikerade team strävar efter att ge exceptionell service som överträffar dina förväntningar vid varje besök.</p>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-content">
+          <i class="info-icon fas fa-cocktail"></i>
+          <h3 class="info-title">LÄCKER MAT</h3>
+          <p class="info-description">Vår passion är att skapa läckra och minnesvärda matupplevelser. Varje rätt på vår meny är noggrant förberedd med färska ingredienser av högsta kvalitet för att erbjuda en gastronomisk fest för dina smaklökar.</p>
+        </div>
+        <div class="info-image" style="background-image: url('pictures/freshing.jpg');"></div>
+      </div>
+      <div class="info-row">
+        <div class="info-image" style="background-image: url('pictures/interior.jpg');"></div>
+        <div class="info-content">
+          <i class="info-icon fas fa-concierge-bell"></i>
+          <h3 class="info-title">VÄLKOMNANDE ATMOSFÄR</h3>
+          <p class="info-description">Vårt etablissemang är mer än bara en restaurang, det är en plats för gemenskap och samvaro. Vi har skapat en varm och inbjudande atmosfär där alla känner sig välkomna. Oavsett om du kommer för en snabb lunch eller ett festligt firande, ser vi fram emot att göra din upplevelse minnesvärd.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+  
+  <script src="homepage.js"></script>
+</body>
+
+</html>
